@@ -1,0 +1,23 @@
+body {
+    background-image:url("");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center center;
+    }
+body {
+    text-align: center;
+    }
+a {
+    font-size: 50px;
+    color: #ff4343;
+    -webkit-text-stroke:1px #741b1b;
+ }
+p{
+ color: #00ff11;
+font-size: 40px;
+-webkit-text-stroke:1px #000000;
+}
+#wordsback{
+    background-color: rgba(6, 77, 77, 0.3);
+}

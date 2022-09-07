@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+a {
+    font-size: 50px;
+    color: #ff00e1;
+    -webkit-text-stroke:1px #000000;
+ }
+ .container {
+    width: 100%;
+    height: 32.6vw;
+    background-image:url("../picture/kaeru.png") ; 
+    animation:scroll-anim 5s alternate infinite;
+    background-size:50%;
+    background-repeat: repeat;
+ }
+ 
+ @keyframes scroll-anim{
+    100% {
+        background-position: -100% 0;
+    }
+ }
+ #wordsback{
+    background-color: rgba(240, 255, 255, 0.5);
+}
+
+.title{
+    color:rgb(0, 0, 0);
+    position:relative;
+    margin:0 auto;
+  }
+
+   @keyframes noise-anim{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  } 
+  .title:after{
+    content:attr(data-text);
+    position:absolute;
+    left:2px;
+    text-shadow:-1px 0 red;
+    top:0;
+    color:black;
+    /* background:black; */
+    overflow:hidden;
+    clip:rect(0,900px,0,0); 
+    animation:noise-anim 2s infinite linear alternate-reverse;
+  }
+  
+  /* @keyframes noise-anim-2{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  } */
+  .title:before{
+    content:attr(data-text);
+    position:absolute;
+    left:-2px;
+    text-shadow:1px 0 blue; 
+    top:0;
+    color:black;
+    /* background:black; */
+    overflow:hidden;
+    clip:rect(0,900px,0,0); 
+    animation:noise-anim-2 3s infinite linear alternate-reverse;
+  }
