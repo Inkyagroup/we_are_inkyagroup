@@ -1,6 +1,6 @@
 body {
-    background-image:url("../picture/japan.png");
-    background-size:45%;
+    background-image:url("../picture/soudainayatu.jpeg");
+    background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center center;
@@ -14,10 +14,10 @@ a {
     -webkit-text-stroke:1px #741b1b;
  }
 p{
- color: #0033ff;
+ color: #472558;
 font-size: 40px;
--webkit-text-stroke:1px #ffffff69;
+-webkit-text-stroke:1px #000000;
 }
 #wordsback{
-    background-color: rgba(159, 0, 19, 0.7);
+    background-color: rgba(240, 255, 255, 0.5);
 }
