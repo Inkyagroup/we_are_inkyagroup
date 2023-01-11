@@ -1,0 +1,34 @@
+body {
+    background-image:url("../picture/japan.png");
+    background-size:45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center center;
+    }
+body {
+    text-align: center;
+    }
+ul {
+    overflow:hidden;
+    list-style:none;
+    margin: 0 auto;
+    z-index: 20;
+    padding:0;
+}
+ul li {
+    display: inline-block;
+    padding: 13px 5px 10px 5px;
+}
+a {
+    font-size: 50px;
+    color: #ff4343;
+    -webkit-text-stroke:1px #741b1b;
+ }
+p{
+ color: #0033ff;
+font-size: 40px;
+-webkit-text-stroke:1px #ffffff69;
+}
+#wordsback{
+    background-color: rgba(159, 0, 19, 0.7);
+}

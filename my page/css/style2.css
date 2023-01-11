@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    }
+ul {
+    overflow:hidden;
+    list-style:none;
+    margin: 0 auto;
+    z-index: 20;
+    padding:0;
+    }
+ul li {
+    display: inline-block;
+    padding: 13px 5px 10px 5px;
+    }
+a {
+     font-size: 50px;
+     color: #ff4343;
+     -webkit-text-stroke:1px #741b1b;
+}
+p.stroke{
+    color: #ffffff;
+    font-size: 40px;
+    -webkit-text-stroke:1px #fff400;
+}
+body {
+    background-image:url("../picture/ginnga.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center center;
+    }
+#back {
+    background-color:  rgba(2, 0, 139, 0.5);
+}
