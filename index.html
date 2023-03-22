@@ -4,6 +4,7 @@
     <title>㈱陰キャグループホールディングス</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
 
@@ -30,7 +31,20 @@
 
     </main>
     <footer>
-      
+      <form name="otoiawase" onsubmit="mail()">
+        <h2>名前</h2>
+        <input required type="text" name="name" placeholder="ペンネームで可" maxlength="1019">
+        <h2>性別</h2>
+        <input type="text" required name="gender" maxlength="30">
+        <h2>件名</h2>
+        <input type="text" name="title">
+        <h2>質問・お問い合わせ・お悩み</h2>
+        <textarea id="t_message" required name="message" cols="60" placeholder="こちらに内容をお書きください"></textarea>
+        <br>
+      </form>
+        <button onclick="mail();">送信</button>
+
+      <!-- 名前　性別（必須）　件名　本文（必須） -->
       <a>～天上天下唯我独尊～</a>
     </footer>
     
